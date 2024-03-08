@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="index.css">
+    <title>My_Profile</title>
+</head>
+<style>
+    #example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #example{
+  -ms-overflow-style: none;
+  }
+  </style>
+<body id="example">
+      <!-- Header -->
+      <div class="fixed w-full flex items-center justify-between h-14 text-white z-10 bg-[#194376] md:z-20 top-0">
+        <div class="pl-3 w-14 md:w-64 h-14 bg-[#194376] border-none hidden md:block md:flex md:justify-start md:items-center">
+          <img class="w-28 mr-3" src="images/logo.png" />
+        </div>
+
+        <div class="ml-3 flex justify-center items-center md:hidden" onclick="outerSide()">
+          <span class="material-symbols-outlined cursor-pointer px-1 rounded text-3xl">
+            menu
+        </span>
+        </div>
+
+        <div class="flex justify-end items-center h-14 bg-[#194376] header-right w-full">
+
+          <ul class="flex items-center justify-end">
+            <li>
+              <div class="block w-px h-7 md:h-10 mx-3 bg-gray-400"></div>
+            </li>
+            <li>
+              <a href="#" class="flex items-center justify-end hover:text-blue-100">
+                <span class=" mr-3">
+                  <img class="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden" src="https://therminic2018.eu/wp-content/uploads/2018/07/dummy-avatar.jpg" />
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ./Header -->
+      
+      <div class="md:w-full flex">
+        <div id="inner_Side" class="fixed flex flex-col -left-[40rem] top-0 w-2/3 md:w-1/3 bg-[#F3F6FF] h-full text-[#194376] transition-all duration-300 z-10 sidebar border-r border-[#46CBDF] md:left-0 md:top-10 lg:w-1/5">
+            <div class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
+              <ul class="flex flex-col pb-4 space-y-1 text-sm lg:text-base">
+                <li class="flex justify-between items-center px-3 pb-3 md:hidden bg-[#194376]">
+              <a href="index.html" class="grid place-items-center">
+                <img src="images/logo.png" alt="" class="w-24 md:w-32">
+              </a>
+              
+                  <a class="grid place-items-center" onclick="innerSide()">
+                    <span class="material-symbols-outlined font-bold text-white">
+                      close
+                    </span>
+                  </a>
+                </li>
+                <li class="px-5 hidden md:block md:border-b border-[#46CBDF] pt-4">
+                  <div class="flex flex-row items-center py-4">
+                    <div class="text-lg font-semibold  tracking-wide uppercase">Dashboard</div>
+                  </div>
+                </li>
+                <li>
+                  <a href="myprofile.html" class="relative flex flex-row items-center h-11 focus:outline-none border-transparent border-b-2 hover:border-[#194376] hover:bg-white md:hover:border-l-4 md:border-b-0 border-[#46CBDF] md:border-l-4">
+                    <span class="ml-2 tracking-wide truncate font-semibold md:ml-5">My Profile / Edit</span>
+                  </a>
+                </li>
+                <li>
+                    <a href="about_dasbord.html" class="relative flex flex-row items-center h-11 focus:outline-none text-white-600 hover:text-white-800 border-transparent border-b-2 hover:border-[#194376] hover:bg-white md:hover:border-l-4 md:border-b-0 border-[#46CBDF] md:border-l-4">
+                      <span class="ml-2 tracking-wide truncate font-semibold md:ml-5">Services</span>
+                    </a>
+                  </li>
+
+    
+                <li>
+                  <a href="service_dasbord.html" class="relative flex flex-row items-center h-11 focus:outline-none text-white-600 hover:text-white-800 border-transparent border-b-2 hover:border-[#194376] hover:bg-white md:hover:border-l-4 md:border-b-0 border-[#46CBDF] md:border-l-4">
+                    <span class="ml-2 tracking-wide truncate font-semibold md:ml-5">Services</span>
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="price_dasbord.html" class="relative flex flex-row items-center h-11 focus:outline-none text-white-600 hover:text-white-800 border-transparent border-b-2 hover:border-[#194376] hover:bg-white md:hover:border-l-4 md:border-b-0 border-[#46CBDF] md:border-l-4">
+                    <span class="ml-2 tracking-wide truncate font-semibold md:ml-5">Pricing</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="order_history.html" class="relative flex flex-row items-center h-11 focus:outline-none text-white-600 hover:text-white-800 border-transparent border-b-2 hover:border-[#194376] hover:bg-white md:hover:border-l-4 md:border-b-0 border-[#46CBDF] md:border-l-4">
+                    <span class="ml-2 tracking-wide truncate font-semibold md:ml-5">Order History</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="contact_dasbord.html" class="relative flex flex-row items-center h-11 focus:outline-none text-white-600 hover:text-white-800 border-transparent border-b-2 hover:border-[#194376] hover:bg-white md:hover:border-l-4 md:border-b-0 border-[#46CBDF] md:border-l-4">
+                    <span class="ml-2 tracking-wide truncate font-semibold md:ml-5">Contact Us</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="change_pass.html" class="relative flex flex-row items-center h-11 focus:outline-none text-white-600 hover:text-white-800 border-transparent border-b-2 hover:border-[#194376] hover:bg-white md:hover:border-l-4 md:border-b-0 border-[#46CBDF] md:border-l-4">
+                    <span class="ml-2 tracking-wide truncate font-semibold md:ml-5">Change Password</span>
+                  </a>
+                </li>
+                <li>
+                    <a href="place_order.html" class="relative flex flex-row items-center h-11 focus:outline-none border-b-2 border-[#194376] bg-white md:border-l-4 md:border-b-0">
+                      <span class="ml-2 tracking-wide truncate font-semibold md:ml-5">Book Your Service</span>
+                    </a>
+                  </li>
+                <li>
+                  <a href="index.html" class="relative flex flex-row items-center h-11 focus:outline-none border-y-2 border-[#194376] hover:bg-white md:text-base mt-10 gap-2">
+                    <span class="material-symbols-outlined font-semibold md:ml-5 ml-2">
+                      logout
+                      </span>
+                    <span class="ml-2 tracking-wide truncate font-semibold">LOGOUT</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <!-- ./Sidebar -->
+
+        <div class="hidden md:block w-1/3 lg:w-1/5"></div>
+
+        <section class="mt-20 flex justify-center items-center w-full md:w-2/3 lg:w-4/5 flex-col">
+            <div
+                class="flex justify-start items-center text-2xl gap-3 mx-2 md:text-3xl lg:text-center lg:justify-center lg:items-center lg:w-full lg:text-4xl">
+                <h1 class="font-medium text-[#194376]">Book_Your_Service</h1>
+            </div>
+    
+            <div class="py-2 my-3 md:pt-5">
+                <h1 class="font-semibold text-lg text-center pb-2 px-2 text-[#194376] md:text-xl lg:text-2xl md:pb-5">
+                    Exclusive Laundry Discounts and Offers !
+                </h1>
+                <div
+                    class="text-sm flex flex-col justify-start gap-5 items-center lg:text-base md:flex-row md:items-start md:w-full lg:items-center lg:justify-center lg:pb-5 lg:rounded-md lg:w-[90%] lg:mx-auto lg:gap-8">
+                    <img src="images/Bookservice.png" alt="images" class="md:w-1/2 my-auto rounded lg:w-1/3 hidden md:block " />
+                    <div class="md:w-1/2 lg:w-2/3 flex flex-col justify-center items-center gap-10">
+                        <div class="text-[#194376] flex flex-col gap-2">
+                            <p>
+                                At mycleaner, we believe in making laundry services affordable and delightful for our valued customers. Check out our exciting discounts and special offers:
+                            </p>
+                            <p>
+                                Sign_In to our website to receive exclusive discount codes, laundry tips, and updates on upcoming promotions. Plus, follow us on social media for surprise flash sales!
+                            </p>
+                        </div>
+    
+                        <div class="flex flex-col gap-3 justify-center items-center w-full lg:flex-row lg:gap-5">
+                            <div class="flex flex-col justify-center items-center border bg-white px-3 py-5 rounded-md border-[#194376] w-[70%] h-28 gap-3 lg:w-[40%] lg:h-40">
+                                <h1 class="text-[#194376] text-lg font-semibold text-center">
+                                    <span class="font-bold text-xl">20%</span> off on First Order</h1>
+                                <p class="font-medium text-[#194376] text-center">Check in Price List</p>
+                            </div>
+                            <div class="flex flex-col justify-center items-center border bg-white px-3 py-5 rounded-md border-[#194376] w-[70%] h-28 gap-3 lg:w-[40%] lg:h-40">
+                                <h1 class="text-[#194376] text-lg font-semibold text-center">
+                                    <span class="font-bold text-xl">10%</span> off on Dry Cleaning</h1>
+                                <p class="font-medium text-[#194376] text-center">Check in Price List</p>
+                            </div>
+                        </div>
+    
+                        <div class="max-w-lg mx-auto">
+                            <button
+                                class="text-white hover:text-[#194376] bg-[#194376] hover:bg-white focus:ring-1 focus:ring-[#46CBDF] font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center relative lg:text-base"
+                                type="button" onclick="updown()">
+                                Select Service
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+    
+                            <!-- Dropdown menu -->
+                            <div class="hidden bg-white text-sm lg:text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4 absolute cursor-pointer"
+                                id="upDown">
+                                <ul class="py-1 px-1" aria-labelledby="dropdown">
+                                    <li>
+                                        <a
+                                            class=" hover:bg-gray-100 text-gray-700 block px-5 py-2">Laundry Service
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="py-2 my-3 md:pt-4  w-full border-t-8 border-[#194376] hidden" id="table">
+                <div class="container mx-auto sm:px-8">
+                    <div class="py-8">
+                        <div class="px-4">
+                            <h2 class="text-[#194376] text-lg font-semibold leading-tight mb-7 text-center md:text-xl lg:text-2xl">Order_Now</h2>
+                        </div>
+                        <div class="my-2 flex sm:flex-row flex-col">
+                            <div class="block relative">
+                                <span class="h-full absolute inset-y-0 left-0 flex items-center pl-2">
+                                    <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current text-gray-500">
+                                        <path
+                                            d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1114.32 4.906l5.387 5.387a1 1 0 01-1.414 1.414l-5.387-5.387A8 8 0 012 10z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <input placeholder="Search"
+                                    class="appearance-none rounded-r rounded-l sm:rounded-l-none border border-gray-400 border-b block pl-8 pr-6 py-2 w-full bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none" id="filterInput"/>
+                            </div>
+                        </div>
+                        <div class="py-4 overflow-x-auto">
+                            <div class="inline-block min-w-full shadow-md rounded-lg overflow-hidden border border-[#194376]">
+                                <table class="min-w-full leading-normal">
+                                    <thead class="text-xs md:text-sm lg:text-base text-white">
+                                        <tr class="bg-[#194376]">
+                                            <th
+                                                class="px-1 py-3 border-b-2 border-[#194376] text-center font-semibold uppercase tracking-wider w-1/6">
+                                                Product Detail
+                                            </th>
+                                            <th
+                                                class="px-1 py-3 border-x-white border-x border-b-2 border-[#194376] text-center font-semibold uppercase tracking-wider w-1/6">
+                                                Price
+                                            </th>
+                                            <th
+                                                class="px-1 py-3 border-x border-r-white border-r border-b-2 border-[#194376] text-center font-semibold uppercase tracking-wider w-1/6">
+                                                Quantity
+                                            </th>
+                                            <th
+                                                class="px-1 py-3 border-b-2 border-[#194376] text-center font-semibold uppercase tracking-wider w-1/6">
+                                                Conform Service
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableBody" class="text-center text-xs md:text-sm lg:text-base bg-[#F3F6FF]">
+                                        <tr>
+                                            <td class="px-1 py-5 border-b w-1/6 border-r border-[#194376] text-center">
+                                                <div class="flex items-center">
+                                                    <div class="flex-shrink-0 w-10 h-10 hidden">
+                                                        <img class="w-full h-full rounded-full"
+                                                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
+                                                            alt="" />
+                                                    </div>
+                                                    <div class="w-full mx-auto">
+                                                        <p class="text-gray-900 whitespace-no-wrap">
+                                                          3-Piece Suit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="px-1 py-5 border-b border-r  border-[#194376] w-1/6">
+                                                <p class="text-gray-900 whitespace-no-wrap font-semibold">550/-</p>
+                                            </td>
+                                            <td class="px-1 py-5 border-b border-r border-[#194376] w-1/6">
+                                                <div class="flex flex-row justify-center items-center gap-2">
+                                                    <button id="addQty" class="border w-5 h-5 flex items-center justify-center border-[#194376] rounded cursor-pointer font-bold">+</button>
+                                                    <h1>1</h1>
+                                                    <button id="subQty" class="border w-5 h-5 text-center flex items-center justify-center border-[#194376] rounded cursor-pointer font-bold">-</button>
+                                                </div>
+                                            </td>
+                                            <td class="px-1 w-1/6 lg:py-1 border-b border-[#194376]">
+                                                <button id="content" class="bg-blue-950 text-white rounded-md px-1 py-1 text-center hover:bg-white border hover:border-blue-900 hover:text-blue-900">
+                                                    Conform
+                                                </button>
+                                                <span id="main" class="bg-white text-blue-950 rounded-md px-1 py-1 text-center border border-blue-900 hidden w-[50%] mx-auto md:w-1/2 lg:w-1/3">
+                                                    <span class="material-symbols-outlined">
+                                                        done
+                                                    </span>
+                                                </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-1 py-5 border-b border-r border-[#194376] w-1/6">
+                                                <div class="flex items-center">
+                                                    <div class="flex-shrink-0 w-10 h-10 hidden">
+                                                        <img class="w-full h-full rounded-full"
+                                                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
+                                                            alt="" />
+                                                    </div>
+                                                    <div class="w-full mx-auto">
+                                                        <p class="text-gray-900 whitespace-no-wrap">
+                                                            Lengha
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="px-1 py-5 border-b border-r border-[#194376] w-1/6">
+                                                <p class="text-gray-900 whitespace-no-wrap font-semibold">660/-</p>
+                                            </td>
+                                            
+                                            <td class="px-1 py-5 border-b border-r border-[#194376]">
+                                                <div class="flex flex-row justify-center items-center gap-2">
+                                                    <button id="addQty" class="border w-5 h-5 flex items-center justify-center border-[#194376] rounded cursor-pointer font-bold">+</button>
+                                                    <h1>1</h1>
+                                                    <button id="subQty" class="border w-5 h-5 text-center flex items-center justify-center border-[#194376] rounded cursor-pointer font-bold">-</button>
+                                                </div>
+                                            </td>
+                                            <td class="px-1 w-1/6 border-b border-[#194376]">
+                                                <button id="content" class="bg-blue-950 text-white rounded-md px-1 py-1 text-center hover:bg-white border hover:border-blue-900 hover:text-blue-900">
+                                                    Conform
+                                                </button>
+                                                <span class="bg-white text-blue-950 rounded-md px-1 py-1 text-center border border-blue-900 hidden w-[50%] mx-auto md:w-1/2 lg:w-1/3">
+                                                    <span class="material-symbols-outlined">
+                                                        done
+                                                    </span>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-1 py-5 border-b border-r border-[#194376]">
+                                                <div class="flex items-center">
+                                                    <div class="flex-shrink-0 w-10 h-10 hidden">
+                                                        <img class="w-full h-full rounded-full"
+                                                            src="https://images.unsplash.com/photo-1540845511934-7721dd7adec3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
+                                                            alt="" />
+                                                    </div>
+                                                    <div class="w-full mx-auto">
+                                                        <p class="text-gray-900 whitespace-no-wrap">
+                                                            Lady Gown
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="px-1 py-5 border-b border-r border-[#194376]">
+                                                <p class="text-gray-900 whitespace-no-wrap font-semibold">549/-</p>
+                                            </td>
+                                            <td class="px-1 py-5 border-b border-r border-[#194376]">
+                                                <div class="flex flex-row justify-center items-center gap-2">
+                                                    <button id="addQty" class="border w-5 h-5 flex items-center justify-center border-[#194376] rounded cursor-pointer font-bold">+</button>
+                                                    <h1>1</h1>
+                                                    <button id="subQty" class="border w-5 h-5 text-center flex items-center justify-center border-[#194376] rounded cursor-pointer font-bold">-</button>
+                                                </div>
+                                            </td>
+                                            <td class="px-1 w-1/6 lg:py-1 border-b border-[#194376]">
+                                                <button id="content" class="bg-blue-950 text-white rounded-md px-1 py-1 text-center hover:bg-white border hover:border-blue-900 hover:text-blue-900">
+                                                    Conform
+                                                </button>
+                                                <span class="bg-white text-blue-950 rounded-md px-1 py-1 text-center border border-blue-900 hidden w-[50%] mx-auto md:w-1/2 lg:w-1/3">
+                                                    <span class="material-symbols-outlined">
+                                                        done
+                                                    </span>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-1 py-5 border-r border-[#194376]">
+                                                <div class="flex items-center">
+                                                    <div class="flex-shrink-0 w-10 h-10 hidden">
+                                                        <img class="w-full h-full rounded-full"
+                                                            src="https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&h=160&w=160&q=80"
+                                                            alt="" />
+                                                    </div>
+                                                    <div class="w-full mx-auto">
+                                                        <p class="text-gray-900 whitespace-no-wrap">
+                                                            Shawl
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="px-1 py-5 border-r border-[#194376] ">
+                                                <p id="price" class="text-gray-900 whitespace-no-wrap font-semibold">549/-</p>
+                                            </td>
+                                            <td class="px-1 py-5  border-r border-[#194376]">
+                                                <div class="flex flex-row justify-center items-center gap-2">
+                                                    <button id="addQty" class="border w-5 h-5 flex items-center justify-center border-[#194376] rounded cursor-pointer font-bold">+</button>
+                                                    <h1>1</h1>
+                                                    <button id="subQty" class="border w-5 h-5 text-center flex items-center justify-center border-[#194376] rounded cursor-pointer font-bold">-</button>
+                                                </div>
+                                            </td>
+                                            <td class="px-1 border-rw-1/6">
+                                                <button id="content" class="bg-blue-950 text-white rounded-md px-1 py-1 text-center hover:bg-white border hover:border-blue-900 hover:text-blue-900">
+                                                    Conform
+                                                </button>
+                                                <span class="bg-white text-blue-950 rounded-md px-1 py-1 text-center border border-blue-900 hidden w-[50%] mx-auto md:w-1/2 lg:w-1/3">
+                                                    <span class="material-symbols-outlined">
+                                                        done
+                                                    </span>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+
+          <script>
+            const filterInput = document.getElementById('filterInput')
+            const tableBody = document.getElementById('tableBody');
+    
+            filterInput.addEventListener('input', function () {
+                const filterValue = filterInput.value.toLowerCase();
+                const rows = tableBody.getElementsByTagName('tr');
+    
+                for (const row of rows) {
+                    let nameCell = row.getElementsByTagName('td')[0];
+                    if (nameCell) {
+                        const name = nameCell.textContent.toLowerCase();
+                        row.style.display = name.includes(filterValue) ? 'table-row' : 'none';
+                    }
+                }
+            });
+        </script>
+    
+      <!-- Sidebar -->
+      <!-- / Profile -->
+      <script>
+        let x = document.getElementById("inner_Side");
+          function innerSide() {
+            if (x.style.left == "0px") {
+              x.style.left = "-500px";
+            }
+          }
+  
+          function outerSide(){
+            if (x.style.left <= "-500px") {
+              x.style.left = "0px";
+  
+            }
+          }
+  
+          </script>
+          <script>
+    
+            let z = document.getElementById("upDown");
+            function updown() {
+                if (z.style.display === "block") {
+                    z.style.display = "none";
+                } else {
+                    z.style.display = "block";
+                }
+            }
+    
+            let hiding = document.getElementById('upDown');
+            let tableContent = document.getElementById('table');
+            hiding.addEventListener('click', function(){
+                hiding.style.display = "none"
+                tableContent.style.display = "block"
+            })
+
+            const hidebutton = document.querySelectorAll('#content');
+            hidebutton.forEach(button =>{
+                button.addEventListener('click', ()=>{
+                    button.style.display = "none";
+                    const quantityElement = button.nextElementSibling;
+                    quantityElement.style.display = "block";
+
+                    
+
+                console.log('ygyghghghghg');
+                })
+            })
+        </script>
+
+<script>
+    const incrementButtons = document.querySelectorAll('#addQty');
+    const decrementButtons = document.querySelectorAll('#subQty');
+
+    incrementButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            
+            const quantityElement = button.nextElementSibling;
+        
+            let quantity = parseInt(quantityElement.textContent);
+    
+            quantity++;
+    
+            quantityElement.textContent = quantity;
+        });
+    });
+    
+    decrementButtons.forEach(button => {
+        button.addEventListener('click', () => {
+        
+            const quantityElement = button.previousElementSibling;
+    
+            let quantity = parseInt(quantityElement.textContent);
+        
+            if (quantity > 0) {
+            
+                quantity--;
+    
+                quantityElement.textContent = quantity;
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
