@@ -27,10 +27,6 @@
         <div class="flex text-white flex-row justify-between items-center transition-all duration-500 ease-in-out relativ">
             <a href="index.html"><img src="images/logo.png" alt="" class="w-24 md:w-32"></a>
             <div class="pb-0 md:hidden flex justify-center items-center gap-5">
-              
-                <button onclick="account()" class="bg-white text-[#194376] cursor-pointer border border-gray-400 px-1 rounded py-[0.4rem] hover:bg-[#194376] hover:text-white transition ease-in-out text-sm lg:text-base">
-                Sign_In
-                </button>
         
               <span onclick="myFunction()" class="material-symbols-outlined cursor-pointer border border-gray-400 px-1 rounded text-3xl">
                   menu
@@ -45,13 +41,11 @@
                 <a href="service.html" class="border-[#194376] border-b-2 hover:border-white py-1 px-1 transition duration-300 ease-in-out">Services</a>
                 <a href="price.html" class="border-[#194376] border-b-2 hover:border-white py-1 px-1 transition duration-300 ease-in-out">Pricing</a>
                 <a href="about.html" class="border-b-2 border-white py-1 px-1 transition duration-300 ease-in-out">Contact_Us</a>
-                <a href="myprofile.html" class="bg-white text-[#194376] hover:bg-[#194376] hover:text-white border my-auto py-1 hover:border-white  px-2 rounded-md transition duration-300 ease-in-out hidden md:block">Sign_In</a>
-
               </div>
           </div>
     </section>
 
-    <section class="m-1 mt-24 w-full  md:mt-20 lg:mx-auto">
+    <section class="mt-24 w-full  md:mt-20 lg:mx-auto px-2 md:px-0">
         <div
       class="flex justify-center items-center text-2xl gap-3  md:text-4xl lg:text-center lg:items-center lg:w-full">
       <h1 class="font-medium text-[#194376] border-b-2 border-b-[#194376] pb-2 mb-3">Contact_Us</h1>
@@ -92,6 +86,10 @@
             </form>
         </div>
     </section>
+
+    <a href="https://wa.me/919718064664?text=Hi%2C%20I%20want%20to%20know%20more%20about%20MyCleaner" class="fixed z-30 bottom-12 right-5 border-none outline-none md:right-16 lg:right-24 cursor-pointer hover:translate hover:scale-125 transition duration-300 ease-in-out">
+        <img src="images/whatsapp-icons.png" alt="WhatSapp" class="w-12 bg-transparent border-none outline-none shadow-lg shadow-green-600 rounded-full md:w-14 lg:w-[4.2rem]">
+    </a>
 
     <footer class="bg-[#194376] text-white py-5 px-3 border-t-4 border-t-white">
         <a href="index.html"><img src="images/logo.png" alt="" class="w-24 md:w-32 mb-5"></a>
@@ -134,17 +132,6 @@
 
             } else {
                 x.style.display = "block";
-
-            }
-        }
-
-        let y = document.getElementById("accounts");
-        function account() {
-            if (y.style.display === "block") {
-                y.style.display = "none";
-
-            } else {
-                y.style.display = "block";
 
             }
         }

@@ -28,12 +28,6 @@
             class="flex text-white flex-row justify-between items-center transition-all duration-500 ease-in-out relativ">
           <a href="index.html"><img src="images/logo.png" alt="" class="w-24 md:w-32"></a>
             <div class="pb-0 md:hidden flex justify-center items-center gap-5">
-
-                <button onclick="account()"
-                    class="bg-white text-[#194376] cursor-pointer border border-gray-400 px-1 rounded py-[0.4rem] hover:bg-[#194376] hover:text-white transition ease-in-out text-sm lg:text-base">
-                    Sign_In
-                </button>
-
                 <span onclick="myFunction()"
                     class="material-symbols-outlined cursor-pointer border border-gray-400 px-1 rounded text-3xl">
                     menu
@@ -51,9 +45,6 @@
                 <a href="price.html" class="border-b-2 border-white py-1 px-1 transition duration-300 ease-in-out">Pricing</a>
                 <a href="contact.html"
                     class="border-[#194376] border-b-2 hover:border-white py-1 px-1 transition duration-300 ease-in-out">Contact_Us</a>
-                <a href="myprofile.html"
-                    class="bg-white text-[#194376] hover:bg-[#194376] hover:text-white border my-auto py-1 hover:border-white  px-2 rounded-md transition duration-300 ease-in-out hidden md:block">Sign_In</a>
-
             </div>
         </div>
     </section>
@@ -69,7 +60,7 @@
                 Exclusive Laundry Discounts and Offers !
             </h1>
             <div
-                class="text-sm flex flex-col justify-start gap-5 items-center md:text-base md:flex-row md:items-start md:w-full lg:items-center lg:justify-center lg:pb-5 lg:rounded-md lg:w-[90%] lg:mx-auto lg:gap-8">
+                class="text-sm flex flex-col justify-start gap-5 items-center md:text-base md:flex-row md:items-start md:w-full lg:items-center lg:justify-center lg:pb-5 lg:rounded-md lg:w-[90%] lg:mx-auto lg:gap-8 px-2 md:px-1 lg:px-0">
                 <img src="images/cloths.png" alt="images" class="md:w-1/2 my-auto rounded lg:w-1/3 hidden md:block " />
                 <div class="md:w-1/2 lg:w-2/3 flex flex-col justify-center items-center gap-10">
                     <div class="text-[#194376] flex flex-col gap-2">
@@ -101,21 +92,9 @@
                     <div class="max-w-lg mx-auto w-[90%]">
 
                     <div class="w-full flex gap-3 justify-center text-sm lg:text-base">
-                        <button
-                            class="text-white hover:text-[#194376] bg-[#194376] hover:bg-[#F3F6FF] focus:ring-1 focus:ring-[#46CBDF] font-medium rounded-lg  px-2 py-2.5 text-center inline-flex items-center relative w-1/2 justify-center"
-                            type="button" onclick="updown()">
-                            Select Service
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-
-                        <a href="place_order.html" class="text-white hover:text-[#194376] bg-[#194376] hover:bg-[#F3F6FF] focus:ring-1 focus:ring-[#46CBDF] font-medium rounded-lg px-2 py-2.5 text-center inline-flex items-center relative w-1/2 justify-center">Book Service</a>
+                        <a href="https://wa.me/919718064664?text=Hi%2C%20I%20want%20to%20book%20your%20services" class="text-white hover:text-[#194376] bg-[#194376] hover:bg-[#F3F6FF] focus:ring-1 focus:ring-[#46CBDF] font-medium rounded-lg px-2 py-2.5 text-center inline-flex items-center relative w-[80%] justify-center">Book Service</a>
                     </div>
 
-                        <!-- Dropdown menu -->
                         <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4 absolute cursor-pointer"
                             id="upDown">
                             <ul class="py-1 px-1" aria-labelledby="dropdown">
@@ -130,7 +109,7 @@
             </div>
         </div>
 
-        <div class="bg-bg-[#F3F6FF] py-2 border shadow-md md:pt-4 hidden" id="table">
+        <div class="bg-bg-[#F3F6FF] py-2 border shadow-md md:pt-4" id="table">
             <h1 class="font-semibold text-xl text-center px-2 text-[rgb(25,67,118)] md:text-2xl lg:pb-0">
                 Price List of Laundry Services
             </h1>
@@ -166,38 +145,262 @@
                                       </tr>
                                   </thead>
                                   <tbody id="tableBody" class="text-center text-xs md:text-sm lg:text-base bg-white text-[#194376]">
-                                      <tr>
+                                      <tr class="border-b border-[#194376]">
                                           <td class="px-1 py-5 border-b w-1/2 border-r border-[#194376] text-center">
                                               <div class="flex items-center">
                                                   <div class="w-full mx-auto">
                                                       <p class=" whitespace-no-wrap font-medium">
-                                                        3-Piece Suit
+                                                        Door Mat
                                                       </p>
                                                   </div>
                                               </div>
                                           </td>
                                           <td class="px-1 py-5 border-b border-l border-[#194376] w-1/2">
-                                              <p class=" whitespace-no-wrap font-bold">550/-</p>
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 50  to  Rs. 150</p>
                                           </td>
                                       </tr>
 
-                                      <tr>
+                                      <tr class="border-b border-[#194376]">
                                           <td class="px-1 py-5 border-b border-r border-[#194376] w-1/2">
                                               <div class="flex items-center">
                                                   <div class="w-full mx-auto">
                                                       <p class=" whitespace-no-wrap font-medium">
-                                                          Lengha
+                                                          Carpet Hard
                                                       </p>
                                                   </div>
                                               </div>
                                           </td>
                                           <td class="px-1 py-5 border-b border-l border-[#194376] w-1/2">
-                                              <p class=" whitespace-no-wrap font-bold">880/-</p>
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 25  Sq.Ft.</p>
                                           </td>
                                       </tr>
 
-                                      <tr>
+                                      <tr class="border-b border-[#194376]">
                                           <td class="px-1 py-5 border-b border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Carpet Soft
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-b border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 300  to  Rs. 600</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Travel Bag
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 300  to  Rs. 600</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          School Bag
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs.150  to  Rs. 200</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Quilt Double
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 300  to  Rs. 350</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Quilt Single
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 200</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Blanket Double
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 350  to  Rs. 350</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Blanket Single
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 200</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Towels
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 100</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Pillow (1 Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 100</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Pillow Cover (2 Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 80</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Muffler / Scarf
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 60</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Lady Long Coat / Jacket
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 200</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Lady Coat / Jacket
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 150</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Bridal Lehenga (3Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 1200  to  Rs. 2000</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Lehenga (3Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 400  to  Rs.1000</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Lehenga Single
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 300  to  Rs. 700</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
                                               <div class="flex items-center">
                                                   <div class="w-full mx-auto">
                                                       <p class=" whitespace-no-wrap font-medium">
@@ -206,11 +409,109 @@
                                                   </div>
                                               </div>
                                           </td>
-                                          <td class="px-1 py-5 border-b border-l border-[#194376] w-1/2">
-                                              <p class=" whitespace-no-wrap font-bold">230/-</p>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 300  to  Rs. 1000</p>
                                           </td>
                                       </tr>
-                                      <tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Frock Suit (3Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 250  to  Rs. 300</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Frock Suit (2Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 200  to  Rs. 250</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Frock Kurta
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 150  to  Rs. 200</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Blouse
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 50  to  Rs. 100</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Saree Heavy
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 250</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Saree Plain
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 200</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Pashmina Shawl
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 350</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
                                           <td class="px-1 py-5 border-r border-[#194376] w-1/2">
                                               <div class="flex items-center">
                                                   <div class="w-full mx-auto">
@@ -221,9 +522,234 @@
                                               </div>
                                           </td>
                                           <td class="px-1 py-5 border-l border-[#194376] w-1/2">
-                                              <p class=" whitespace-no-wrap font-bold">440/-</p>
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 100</p>
                                           </td>
                                       </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Sweater
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 100  to  Rs. 150</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Suit (2Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 240</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Suit (2Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 180</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Shoes (Pair)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 250</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Leather Jacket
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 350  to  Rs. 400</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Sherwani (3Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 300  to  Rs. 700</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Hoodie
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 150</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Sweatshirt
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 100</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Sweater
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 100</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Suit (3Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 300</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Suit (2Pc.)
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 220</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Kurta
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 150</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Over Coat / Jacket
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 200  to  Rs. 250</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Coat / Jacket
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 150</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Pent / Trouser / Jeans
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 70</p>
+                                          </td>
+                                      </tr>
+                                      <tr class="border-b border-[#194376]">
+                                          <td class="px-1 py-5 border-r border-[#194376] w-1/2">
+                                              <div class="flex items-center">
+                                                  <div class="w-full mx-auto">
+                                                      <p class=" whitespace-no-wrap font-medium">
+                                                          Shirt / T-Shirt
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                          <td class="px-1 py-5 border-l border-[#194376] w-1/2">
+                                              <p class=" whitespace-no-wrap font-bold">Rs. 70</p>
+                                          </td>
+                                      </tr>
+
                                   </tbody>
                               </table>
                           </div>
@@ -235,6 +761,10 @@
     </section>
     </div>
     </section>
+
+    <a href="https://wa.me/919718064664?text=Hi%2C%20I%20want%20to%20know%20more%20about%20MyCleaner" class="fixed z-30 bottom-12 right-5 border-none outline-none md:right-16 lg:right-24 cursor-pointer hover:translate hover:scale-125 transition duration-300 ease-in-out">
+        <img src="images/whatsapp-icons.png" alt="WhatSapp" class="w-12 bg-transparent border-none outline-none shadow-lg shadow-green-600 rounded-full md:w-14 lg:w-[4.2rem]">
+      </a>
 
     <footer class="bg-[#194376] text-white py-5 px-3">
         <a href="index.html"><img src="images/logo.png" alt="" class="w-24 md:w-32 mb-5"></a>
@@ -278,30 +808,6 @@
             }
         }
 
-        let y = document.getElementById("accounts");
-        function account() {
-            if (y.style.display === "block") {
-                y.style.display = "none";
-            } else {
-                y.style.display = "block";
-            }
-        }
-
-        let z = document.getElementById("upDown");
-        function updown() {
-            if (z.style.display === "block") {
-                z.style.display = "none";
-            } else {
-                z.style.display = "block";
-            }
-        }
-
-        let hiding = document.getElementById('upDown');
-        let tableContent = document.getElementById('table');
-        hiding.addEventListener('click', function () {
-            hiding.style.display = "none"
-            tableContent.style.display = "block"
-        })
     </script>
     <script>
         const filterInput = document.getElementById('filterInput')
@@ -320,7 +826,7 @@
             }
         });
     </script>
-    <!-- <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script> -->
+    
 </body>
 
 </html>

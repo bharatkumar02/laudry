@@ -23,10 +23,6 @@
     <div class="flex flex-row justify-between items-center transition-all duration-500 ease-in-out relative text-white">
       <a href="index.html"><img src="images/logo.png" alt="" class="w-24 md:w-32"></a>
         <div class="pb-0 md:hidden flex justify-center items-center gap-5">
-          
-            <button onclick="account()" class="bg-white text-[#194376] cursor-pointer border border-gray-400 px-1 rounded py-[0.4rem] hover:bg-[#194376] hover:text-white transition ease-in-out text-sm lg:text-base">
-            Sign_In
-            </button>
     
           <span onclick="myFunction()" class="material-symbols-outlined cursor-pointer border border-gray-400 px-1 rounded text-3xl">
               menu
@@ -41,8 +37,6 @@
           <a href="service.html" class="border-b-2 border-white py-1 px-1 transition duration-300 ease-in-out">Services</a>
             <a href="price.html" class="border-[#194376] border-b-2 hover:border-white py-1 px-1 transition duration-300 ease-in-out">Pricing</a>
             <a href="contact.html" class="border-[#194376] border-b-2 hover:border-white py-1 px-1 transition duration-300 ease-in-out">Contact_Us</a>
-            <a href="myprofile.html" class="bg-white text-[#194376] hover:bg-[#194376] hover:text-white border my-auto py-1 hover:border-white  px-2 rounded-md transition duration-300 ease-in-out hidden md:block">Sign_In</a>
-
           </div>
 </section>
 
@@ -52,7 +46,7 @@
       <h1 class="font-medium text-[#194376] border-b-2 border-b-[#194376] pb-2 mb-4">Our Services</h1>
   </div>
 
-        <div class="py-2 my-3 md:pt-5 bg-white border-b-8 border-[#194376]">
+        <div class="py-2 my-3 md:pt-5 bg-white border-b-8 border-[#194376] px-2 md:px-1 lg:px-0">
             <h1 class="font-semibold text-xl text-center pb-2 px-2 text-[#194376] md:text-2xl md:pb-5">Shine bright with our laundry expertise.</h1>
             <div class="text-sm flex flex-col justify-start gap-5 items-center md:text-base md:flex-row md:items-start md:w-full lg:items-center lg:justify-center lg:pb-5 lg:rounded-md lg:w-[90%] lg:mx-auto lg:gap-8">
 
@@ -114,7 +108,7 @@
           <div class="w-1/2 hidden lg:block">
               <img src="images/service_2.jpg" alt="">
           </div>
-          <ul class="flex flex-col gap-4 py-8 items-center md:mb-5 md:px-5 mx-auto lg:w-1/2 text-xs lg:text-sm">
+          <ul class="flex flex-col gap-4 py-8 items-center md:mb-5 md:px-5 mx-auto lg:w-1/2 text-xs lg:text-sm px-2">
           
             <li class="bg-[#F3F6FF] rounded-full grid place-items-center w-[100px] h-[100px] text-lg text-center text-[#46CBDF] outline outline-[15px] outline-[#194376] shadow-xl shadow-black border-none font-bold">Sorting</li>
               <li class="flex w-full justify-between items-center">
@@ -149,6 +143,10 @@
           </ul>
         </div>
       </section>
+
+      <a href="https://wa.me/919718064664?text=Hi%2C%20I%20want%20to%20know%20more%20about%20MyCleaner" class="fixed z-30 bottom-12 right-5 border-none outline-none md:right-16 lg:right-24 cursor-pointer hover:translate hover:scale-125 transition duration-300 ease-in-out">
+        <img src="images/whatsapp-icons.png" alt="WhatSapp" class="w-12 bg-transparent border-none outline-none shadow-lg shadow-green-600 rounded-full md:w-14 lg:w-[4.2rem]">
+      </a>
 
       <footer class="bg-[#194376] text-white py-5 px-3 border-t-4 border-t-white">
         <a href="index.html"><img src="images/logo.png" alt="" class="w-24 md:w-32 mb-5"></a>
@@ -191,17 +189,6 @@
   
             } else {
               x.style.display = "block";
-  
-            }
-          }
-  
-          let y = document.getElementById("accounts");
-          function account(){
-            if (y.style.display === "block") {
-              y.style.display = "none";
-  
-            } else {
-              y.style.display = "block";
   
             }
           }
