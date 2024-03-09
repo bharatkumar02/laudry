@@ -810,21 +810,48 @@
 
     </script>
     <script>
-        const filterInput = document.getElementById('filterInput')
-        const tableBody = document.getElementById('tableBody');
+        const filterInput = document.getElementById('filterInput');
+const tableBody = document.getElementById('tableBody');
 
-        filterInput.addEventListener('input', function () {
-            const filterValue = filterInput.value.toLowerCase();
-            const rows = tableBody.getElementsByTagName('tr');
+filterInput.addEventListener('input', function () {
+    const filterValue = filterInput.value.toLowerCase();
+    const rows = tableBody.getElementsByTagName('tr');
+    let hasMatch = false;
 
-            for (const row of rows) {
-                let nameCell = row.getElementsByTagName('td')[0];
-                if (nameCell) {
-                    const name = nameCell.textContent.toLowerCase();
-                    row.style.display = name.includes(filterValue) ? 'table-row' : 'none';
-                }
+    for (const row of rows) {
+        let nameCell = row.getElementsByTagName('td')[0];
+        if (nameCell.textContent) {
+            const name = nameCell.textContent.toLowerCase();
+            row.style.display = name.includes(filterValue) ? 'table-row' : 'none';
+            if (row.style.display !== 'none') {
+                hasMatch = true;
             }
-        });
+        }
+    }
+
+    if (!hasMatch) {
+        const newRow = document.createElement('tr');
+        
+        const nameCell = document.createElement('td');
+        nameCell.textContent = 'Sorry! Currently This Service Is Not Availabe. For More Services Check Our Price List.';
+        nameCell.style.paddingTop = '10px';
+        nameCell.style.paddingBottom = '10px';
+        
+        newRow.appendChild(nameCell);
+
+        const priceCell = document.createElement('td');
+        priceCell.textContent = 'N/A';
+        priceCell.style.borderLeft = "1px solid blue";
+        priceCell.style.paddingTop = '10px';
+        priceCell.style.paddingBottom = '10px';
+
+        newRow.appendChild(priceCell);
+
+        tableBody.appendChild(newRow);
+    }
+});
+
+
     </script>
     
 </body>
